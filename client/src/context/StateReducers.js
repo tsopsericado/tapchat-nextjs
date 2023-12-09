@@ -8,7 +8,6 @@ export const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case reducerCases.SET_USER_INFO:
-      console.log({ userInfo: action.userInfo });
       //setting the user in the global context
       return {
         ...state,
