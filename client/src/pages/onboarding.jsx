@@ -6,7 +6,7 @@ import Avatar from "@/components/common/Avatar";
 
 function onboarding() {
   const [{ userInfo }] = useStateProvider();
-  const [name, setName] = useState(userInfo || "");
+  const [name, setName] = useState(userInfo?.name || "");
   const [about, setAbout] = useState("");
   const [image, setImage] = useState("/default_avatar.png");
 
